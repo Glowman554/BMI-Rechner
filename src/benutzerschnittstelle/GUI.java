@@ -22,9 +22,10 @@ import java.text.ParseException;
 import java.util.Locale;
 import java.awt.event.ActionEvent;
 
+
+@SuppressWarnings("serial")
 public class GUI extends JFrame
 {
-
 	private JPanel contentPane;
 	private JLabel lblNewLabel;
 	private JTextField txtGewicht;
@@ -48,7 +49,7 @@ public class GUI extends JFrame
 	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException
 	{
 		UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-		
+
 		EventQueue.invokeLater(new Runnable()
 		{
 			public void run()
